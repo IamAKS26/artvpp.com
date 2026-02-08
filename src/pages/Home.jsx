@@ -22,16 +22,16 @@ const Home = () => {
     // Dummy Data
     const categories = ['All', 'Paintings', 'Digital Art', 'Sculpture', 'Photography', 'Crafts', 'Services'];
     const artworks = [
-        { id: 1, title: 'Abstract Harmony', artist: 'Elena R.', price: 120, image: 'https://images.unsplash.com/photo-1579783902614-a3fb39279c42?q=80&w=1000' },
-        { id: 2, title: 'Mountain Whisper', artist: 'John Doe', price: 450, image: 'https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=1000' },
-        { id: 3, title: 'Urban Solitude', artist: 'Sarah K.', price: 200, image: 'https://images.unsplash.com/photo-1574180045003-7261d84af536?q=80&w=1000' },
-        { id: 4, title: 'Golden Hour', artist: 'Mike B.', price: 85, image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1000' },
-        { id: 5, title: 'Digital Dreams', artist: 'Pixel Art', price: 60, image: 'https://images.unsplash.com/photo-1633167606204-20508f7aa90e?q=80&w=1000' },
-        { id: 6, title: 'Sculpted Silence', artist: 'Davinci C.', price: 1200, image: 'https://images.unsplash.com/photo-1554188248-986adbb73be0?q=80&w=1000' },
-        { id: 7, title: 'Neon Nights', artist: 'Cyber A.', price: 150, image: 'https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1000' },
-        { id: 8, title: 'Nature Pattern', artist: 'Green T.', price: 95, image: 'https://images.unsplash.com/photo-1515405295579-ba7b45403062?q=80&w=1000' },
-        { id: 9, title: 'Portraits VI', artist: 'Elena R.', price: 300, image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000' },
-        { id: 10, title: 'Ocean Depth', artist: 'See M.', price: 230, image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000' },
+        { id: 1, title: 'Chromatic Symphony', artist: 'Elena R.', price: 1200, image: '/images/art-01.jpg' },
+        { id: 2, title: 'Azure Solitude', artist: 'Marcus Chen', price: 850, image: '/images/art-02.jpg' },
+        { id: 3, title: 'Urban Rhythms', artist: 'Sarah K.', price: 450, image: '/images/art-03.jpg' },
+        { id: 4, title: 'Neon Horizons', artist: 'Alex V.', price: 300, image: '/images/art-04.jpg' },
+        { id: 5, title: 'Terra Cotta Dreams', artist: 'Oluwaseun', price: 150, image: '/images/art-05.jpg' },
+        { id: 6, title: 'Fluid Motion', artist: 'Mia Wallace', price: 2100, image: '/images/art-06.jpg' },
+        { id: 7, title: 'Silent Void', artist: 'David K.', price: 5000, image: '/images/art-07.jpg' },
+        { id: 8, title: 'Algorithmic Nature', artist: 'AI Collective', price: 50, image: '/images/art-08.jpg' },
+        { id: 9, title: 'Forest Echoes', artist: 'Elena R.', price: 950, image: '/images/art-09.jpg' },
+        { id: 10, title: 'Geometric Fugue', artist: 'Marcus Chen', price: 600, image: '/images/art-10.jpg' },
     ];
 
     return (

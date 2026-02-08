@@ -4,7 +4,7 @@ import { Heart, Star, Palette, Truck, ShieldCheck, Download } from 'lucide-react
 
 const StickyBuyPanel = ({ title, artist, price, isDigital, onAddToCart }) => {
     return (
-        <div className="sticky top-24 space-y-8">
+        <div className="lg:sticky lg:top-24 space-y-8">
 
             {/* Header Info */}
             <div className="space-y-2">

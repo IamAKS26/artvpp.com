@@ -29,6 +29,11 @@ export default {
                 'brand-secondary': '#C7080C',
                 'brand-dark': '#222B31',
 
+                // Dark Mode Tokens
+                'dark-surface': '#2D3748',
+                'dark-card': '#1E293B',
+                'dark-border': '#4A5568',
+
                 // STRICT VISIBILITY TOKENS
                 'brand-light-bg': '#FFFFFF',
                 'brand-dark-bg': '#1A202C',    // Dark Slate Base

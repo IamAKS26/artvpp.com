@@ -1,154 +1,163 @@
 export const products = [
     {
         id: "p1",
-        title: "Ethereal Dreams",
+        title: "Chromatic Symphony",
         artist: "Elena R.",
         price: 1200,
         category: "Digital Art",
         type: "Digital",
-        image: "https://images.unsplash.com/photo-1579783902614-a3fb39279c42?q=80&w=1000",
-        description: "A digital exploration of subconscious realms, featuring vibrant colors and fluid forms."
+        image: "/images/art-01.jpg",
+        description: "A vibrant digital composition exploring the interplay of light and color frequencies."
     },
     {
         id: "p2",
-        title: "Golden Hour Solitude",
+        title: "Azure Solitude",
         artist: "Marcus Chen",
         price: 850,
         category: "Photography",
         type: "Print",
-        image: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1000",
-        description: "Captured during the last light of day in the Swiss Alps. Limited edition print."
+        image: "/images/art-02.jpg",
+        description: "A serene capture of oceanic depths, evoking a sense of calm and introspection."
     },
     {
         id: "p3",
-        title: "Urban Decay",
+        title: "Urban Rhythms",
         artist: "Sarah Jenkins",
         price: 450,
         category: "Mixed Media",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1521404099507-7e6141446777?q=80&w=1000",
-        description: "An abstraction of city life using acrylics and found materials on canvas."
+        image: "/images/art-03.jpg",
+        description: "A chaotic yet harmonious blend of street art elements and traditional canvas techniques."
     },
     {
         id: "p4",
-        title: "Neon Cyberpunk",
+        title: "Neon Horizons",
         artist: "Alex V.",
         price: 300,
         category: "Digital Art",
         type: "Digital",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000",
-        description: "Futuristic cityscape rendering with high-contrast neon lighting."
+        image: "/images/art-04.jpg",
+        description: "A futuristic cityscape bathed in neon hues, representing the dawn of a new era."
     },
     {
         id: "p5",
-        title: "Traditional Pottery Set",
+        title: "Terra Cotta Dreams",
         artist: "Oluwaseun",
         price: 150,
         category: "Crafts",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=1000",
-        description: "Hand-thrown clay pottery set, glazed with natural earth tones."
+        image: "/images/art-05.jpg",
+        description: "Hand-molded clay artifacts inspired by ancient civilizations and earth tones."
     },
     {
         id: "p6",
-        title: "Abstract Flow",
+        title: "Fluid Motion",
         artist: "Mia Wallace",
         price: 2100,
         category: "Paintings",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=1000",
-        description: "Large scale oil painting depicting the flow of water and energy."
+        image: "/images/art-06.jpg",
+        description: "An oil painting that captures the dynamic movement of water in a frozen moment."
     },
     {
         id: "p7",
-        title: "Sculpted Silence",
+        title: "Silent Void",
         artist: "David K.",
         price: 5000,
         category: "Sculpture",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1559632462-2436d2c4815d?q=80&w=1000",
-        description: "Marble sculpture exploring the concept of silence and negative space."
+        image: "/images/art-07.jpg",
+        description: "A minimalist sculpture that challenges the viewer's perception of space and form."
     },
     {
         id: "p8",
-        title: "Digital Genesis",
+        title: "Algorithmic Nature",
         artist: "AI Collective",
         price: 50,
         category: "Digital Art",
         type: "Digital",
-        image: "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=1000",
-        description: "Generative art piece created using custom algorithms."
+        image: "/images/art-08.jpg",
+        description: "Generative patterns adhering to the Fibonacci sequence, created by code."
     },
-    // Add more items to reach ~15
     {
         id: "p9",
-        title: "Forest Whisper",
+        title: "Forest Echoes",
         artist: "Elena R.",
         price: 950,
         category: "Photography",
         type: "Print",
-        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
-        description: "Deep forest capture with rays of sunlight piercing through."
+        image: "/images/art-09.jpg",
+        description: "A mystical perspective of an ancient forest, highlighting the play of shadow and light."
     },
     {
         id: "p10",
-        title: "Geometric Harmony",
+        title: "Geometric fugue",
         artist: "Marcus Chen",
         price: 600,
         category: "Digital Art",
         type: "Print",
-        image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1000",
-        description: "A study of geometry and color theory in a modern digital format."
+        image: "/images/art-10.jpg",
+        description: "Sharp lines and bold shapes intertwine in this study of modern geometry."
     },
     {
         id: "p11",
-        title: "Vintage Portrait",
+        title: "Timeless Portrait",
         artist: "Sarah Jenkins",
         price: 1800,
         category: "Paintings",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=1000",
-        description: "Oil on canvas portrait with a vintage aesthetic."
+        image: "/images/art-11.jpg",
+        description: "A contemporary take on classical portraiture, focusing on raw emotion."
     },
     {
         id: "p12",
-        title: "Ceramic Vase",
+        title: "Ceramic Whimsy",
         artist: "Oluwaseun",
         price: 220,
         category: "Crafts",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1578749556935-ef88814b29c3?q=80&w=1000",
-        description: "Unique ceramic vase with intricate patterns."
+        image: "/images/art-12.jpg",
+        description: "A playful ceramic piece designed to bring joy and color to any space."
     },
     {
         id: "p13",
-        title: "Minimalist Lines",
+        title: "Minimal Lines",
         artist: "Alex V.",
         price: 150,
         category: "Digital Art",
         type: "Digital",
-        image: "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1000",
-        description: "Minimalist line art suitable for modern interiors."
+        image: "/images/art-13.jpg",
+        description: "The essence of form captured in single, continuous strokes."
     },
     {
         id: "p14",
-        title: "Bronze Figure",
+        title: "Bronze Resilience",
         artist: "David K.",
         price: 3500,
         category: "Sculpture",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1554188248-986adbb73be0?q=80&w=1000",
-        description: "Small bronze figure representing resilience."
+        image: "/images/art-14.jpg",
+        description: "A heavy bronze casting symbolizing strength and endurance through time."
     },
     {
         id: "p15",
-        title: "Sunset Boulevard",
+        title: "Twilight City",
         artist: "Mia Wallace",
         price: 1100,
         category: "Paintings",
         type: "Physical",
-        image: "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?q=80&w=1000",
-        description: "Impressionist style painting of a city street at sunset."
+        image: "/images/art-15.jpg",
+        description: "The city lights reflecting off wet pavement in a moody, atmospheric piece."
+    },
+    {
+        id: "p16",
+        title: "Abstract Reality",
+        artist: "Mia Wallace",
+        price: 1300,
+        category: "Paintings",
+        type: "Physical",
+        image: "/images/art-16.jpg",
+        description: "Blurring the lines between what is seen and what is felt."
     }
 ];
 
@@ -159,7 +168,7 @@ export const services = [
         artist: "Elena R.",
         startingPrice: 150,
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?q=80&w=1000",
+        image: "/images/art-03.jpg",
         description: "I will draw a custom portrait of you or your loved ones in my unique style."
     },
     {
@@ -168,7 +177,7 @@ export const services = [
         artist: "Alex V.",
         startingPrice: 300,
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1626785774573-4b7993143a2d?q=80&w=1000",
+        image: "/images/art-05.jpg",
         description: "Professional logo design and brand identity packages for startups."
     },
     {
@@ -177,7 +186,7 @@ export const services = [
         artist: "Marcus Chen",
         startingPrice: 500,
         rating: 5.0,
-        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000",
+        image: "/images/art-08.jpg",
         description: "High-quality 3D models and product renderings for commercial use."
     },
     {
@@ -186,7 +195,7 @@ export const services = [
         artist: "Sarah Jenkins",
         startingPrice: 1000,
         rating: 4.7,
-        image: "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1000",
+        image: "/images/art-11.jpg",
         description: "I will paint a custom mural for your home, office, or business."
     },
     {
@@ -195,7 +204,7 @@ export const services = [
         artist: "Oluwaseun",
         startingPrice: 200,
         rating: 4.9,
-        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1000",
+        image: "/images/art-12.jpg",
         description: "Bespoke handmade jewelry designed specifically for you."
     },
     {
@@ -204,7 +213,7 @@ export const services = [
         artist: "Mia Wallace",
         startingPrice: 250,
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1514525253440-b393452e8d26?q=80&w=1000",
+        image: "/images/art-14.jpg",
         description: "Creative album cover art to make your music stand out."
     }
 ];
