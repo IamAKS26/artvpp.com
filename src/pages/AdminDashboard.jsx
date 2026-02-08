@@ -81,8 +81,120 @@ const AdminDashboard = () => {
                         </div>
 
                         {/* Content Area */}
-                        <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-white/5 overflow-hidden shadow-sm min-h-[300px] flex items-center justify-center">
-                            <p className="text-gray-400">Select a tab to view details (Demo Mode)</p>
+                        <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-100 dark:border-white/5 overflow-hidden shadow-sm min-h-[300px]">
+
+                            {activeTab === 'overview' && (
+                                <div className="p-8">
+                                    <h3 className="text-xl font-bold mb-6">Recent System Activity</h3>
+                                    <div className="space-y-6">
+                                        {[1, 2, 3].map(i => (
+                                            <div key={i} className="flex items-start gap-4 pb-6 border-b border-gray-100 dark:border-white/5 last:border-0 last:pb-0">
+                                                <div className="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                                                    <AlertCircle size={20} />
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-sm">New Artist Application</h4>
+                                                    <p className="text-sm text-gray-500 mt-1">User <strong>Sarah Jenkins</strong> applied to be an artist.</p>
+                                                    <p className="text-xs text-gray-400 mt-2">2 hours ago</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'users' && (
+                                <div>
+                                    <div className="p-6 border-b border-gray-100 dark:border-white/5">
+                                        <h3 className="text-xl font-bold">User Management</h3>
+                                    </div>
+                                    <div className="overflow-x-auto">
+                                        <table className="w-full text-left">
+                                            <thead className="bg-gray-50 dark:bg-white/5 text-xs uppercase text-gray-500 font-medium">
+                                                <tr>
+                                                    <th className="px-6 py-4">User</th>
+                                                    <th className="px-6 py-4">Role</th>
+                                                    <th className="px-6 py-4">Status</th>
+                                                    <th className="px-6 py-4">Joined</th>
+                                                    <th className="px-6 py-4">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-gray-100 dark:divide-white/5">
+                                                {[
+                                                    { name: 'Alice Johnson', email: 'alice@example.com', role: 'Customer', status: 'Active', joined: 'Oct 24, 2023' },
+                                                    { name: 'Elena R.', email: 'admin@artvpp.com', role: 'Vendor', status: 'Active', joined: 'Sep 12, 2023' },
+                                                    { name: 'John Doe', email: 'john@example.com', role: 'Artist', status: 'Active', joined: 'Nov 01, 2023' },
+                                                    { name: 'Michael Smith', email: 'mike@example.com', role: 'Customer', status: 'Banned', joined: 'Dec 05, 2023' },
+                                                ].map((user, idx) => (
+                                                    <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                                                        <td className="px-6 py-4">
+                                                            <div className="flex items-center gap-3">
+                                                                <div className="w-8 h-8 rounded-full bg-gray-200 dark:bg-zinc-700 flex items-center justify-center text-xs font-bold">
+                                                                    {user.name.charAt(0)}
+                                                                </div>
+                                                                <div>
+                                                                    <div className="font-medium text-sm">{user.name}</div>
+                                                                    <div className="text-xs text-gray-500">{user.email}</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td className="px-6 py-4 text-sm">{user.role}</td>
+                                                        <td className="px-6 py-4">
+                                                            <span className={`px-2 py-1 rounded-full text-xs font-bold ${user.status === 'Active' ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'}`}>
+                                                                {user.status}
+                                                            </span>
+                                                        </td>
+                                                        <td className="px-6 py-4 text-sm text-gray-500">{user.joined}</td>
+                                                        <td className="px-6 py-4 text-sm text-blue-600 cursor-pointer hover:underline">Edit</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'approvals' && (
+                                <div>
+                                    <div className="p-6 border-b border-gray-100 dark:border-white/5">
+                                        <h3 className="text-xl font-bold">Pending Approvals</h3>
+                                    </div>
+                                    <div className="overflow-x-auto">
+                                        <table className="w-full text-left">
+                                            <thead className="bg-gray-50 dark:bg-white/5 text-xs uppercase text-gray-500 font-medium">
+                                                <tr>
+                                                    <th className="px-6 py-4">Request Type</th>
+                                                    <th className="px-6 py-4">Applicant</th>
+                                                    <th className="px-6 py-4">Date</th>
+                                                    <th className="px-6 py-4">Details</th>
+                                                    <th className="px-6 py-4">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-gray-100 dark:divide-white/5">
+                                                {[
+                                                    { type: 'Artist Verification', applicant: 'Sarah Jenkins', date: '2 hours ago', details: 'Portfolio Link attached' },
+                                                    { type: 'Product Listing', applicant: 'Elena R.', date: '5 hours ago', details: 'New "Abstract Blue" artwork' },
+                                                    { type: 'Vendor Application', applicant: 'Art Supplies Co.', date: '1 day ago', details: 'Business License #12345' },
+                                                ].map((item, idx) => (
+                                                    <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                                                        <td className="px-6 py-4 text-sm font-bold">{item.type}</td>
+                                                        <td className="px-6 py-4 text-sm">{item.applicant}</td>
+                                                        <td className="px-6 py-4 text-sm text-gray-500">{item.date}</td>
+                                                        <td className="px-6 py-4 text-sm text-gray-500">{item.details}</td>
+                                                        <td className="px-6 py-4">
+                                                            <div className="flex gap-2">
+                                                                <button className="px-3 py-1 bg-green-600 text-white rounded-lg text-xs hover:bg-green-700 transition-colors">Approve</button>
+                                                                <button className="px-3 py-1 bg-red-600 text-white rounded-lg text-xs hover:bg-red-700 transition-colors">Reject</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            )}
+
                         </div>
                     </div>
                 </div>

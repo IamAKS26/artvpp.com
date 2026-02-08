@@ -54,8 +54,8 @@ Use these credentials to test the different user roles:
 | Role | Email | Password | Access |
 | :--- | :--- | :--- | :--- |
 | **Vendor** | `vendor@artvpp.com` | `vendor` | Access to **Vendor Dashboard** (Sales, Listings, Settings) |
-| **Artist** | *(Register New)* | - | Access to **Artist Dashboard** (Profile, Services) |
-| **Admin** | `admin@artvpp.com` | `admin` | Access to **Admin Dashboard** (Revenue, System Status) |
+| **Artist** | `artist@artvpp.com` | `artist` | Access to **Artist Dashboard** (Profile, Services) |
+| **Admin** | `admin@artvpp.com` | `admin` | Access to **Admin Dashboard** (Revenue, Users, Approvals) |
 | **User** | `user@artvpp.com` | `user` | Standard shopping experience |
 
 > *Note: You can also register a new account to test the onboarding flow.*

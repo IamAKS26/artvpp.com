@@ -16,5 +16,11 @@ export const users = [
         password: "user",
         role: "user",
         name: "Demo Customer"
+    },
+    {
+        email: "artist@artvpp.com",
+        password: "artist",
+        role: "artist",
+        name: "Demo Artist"
     }
 ];

@@ -33,6 +33,8 @@ const Login = () => {
                 navigate('/admin');
             } else if (result.role === 'vendor') {
                 navigate('/vendor');
+            } else if (result.role === 'artist') {
+                navigate('/artist');
             } else {
                 navigate(from === "/login" ? "/" : from, { replace: true });
             }
